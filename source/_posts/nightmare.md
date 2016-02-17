@@ -1,6 +1,6 @@
 title: nightmare
 date: 2015-12-09 12:29
-category: "..."
+category: "杂"
 tags:
 ---
 # 噩梦
