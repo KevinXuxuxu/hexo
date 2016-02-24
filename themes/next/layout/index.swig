@@ -12,7 +12,7 @@
   <section id="posts" class="posts-expand">
     {% for post in page.posts %}
       {% for cat in post.categories%}
-        {% if cat.name == "game" or cat.name == "tech" %} {{ post_template.render(post, true) }} {% endif %}
+        {% if cat.name == "game" or cat.name == "tech" or cat.name == "log"%} {{ post_template.render(post, true) }} {% endif %}
       {% endfor %}
     {% endfor %}
   </section>
