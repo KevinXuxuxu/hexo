@@ -14,3 +14,9 @@
     cd /usr/lib
     ln -s x86_64-linux-gnu/crt*.o .
     ```
+  - configure: error: cannot find neither zip nor jar, cannot continue
+    - just get zip-3.0
+    ```
+    sudo apt-get install zip
+    ```
+  - now stuck on insefficient memory.
