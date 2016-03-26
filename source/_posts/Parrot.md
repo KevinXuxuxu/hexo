@@ -9,3 +9,8 @@
 - configure and build gcc in the target folder
 - possible problems
   - cannot find `crti.o`: No such file or directory
+    - create symbolic link between libs
+    ```
+    cd /usr/lib
+    ln -s x86_64-linux-gnu/crt*.o .
+    ```
