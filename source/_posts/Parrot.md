@@ -3,6 +3,10 @@
 
 - gcc-4.5 is needed.
   - gmp-5.1.3
+    - need sth. called `m4`
+    ```
+    sudo apt-get install m4
+    ```
   - mpfr-3.1.4
   - mpc-1.0.2
   - above packages must be installed in exact version and order
