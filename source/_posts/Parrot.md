@@ -23,4 +23,36 @@
     ```
     sudo apt-get install zip
     ```
-  - now stuck on insefficient memory.
+  - i386:x86-64 architecture of input file `/usr/lib/../lib/crtn.o' is incompatible with i386 output
+    - change default setting of gcc in file: `gcc/config/i386/t-linux64`
+    ```
+    # On x86-64 we do not need any exports for glibc for 64-bit libgcc_s,
+    # override the settings
+    # from t-slibgcc-elf-ver and t-linux
+    SHLIB_MAPFILES = $(srcdir)/libgcc-std.ver \
+		    $(srcdir)/config/i386/libgcc-x86_64-glibc.ver
+
+    MULTILIB_OPTIONS = m64/m32
+    MULTILIB_DIRNAMES = 64 32
+    MULTILIB_OSDIRNAMES = ../lib64 ../lib
+    ```
+    - So changing the last row to be:
+    ```
+    MULTILIB_OSDIRNAMES = ../lib ../lib32
+    ```
+  - make: asm/errno.h: No such file or directory
+    - missing package
+    ```
+    sudo apt-get install linux-libc-dev
+    ```
+- Installing built gcc-4.5.4
+  - remove the old version of gcc and install the new
+  ```
+  sudo apt-get remove gcc
+  cd gcc-obj
+  make install
+  ```
+- Installing other packages
+  - deprecating packages
+    - package libtiff4-dev is deprecated in `sudo apt-get install dejagnu flex bison axel libboost-dev libtiff4-dev`, used `libtiff5-dev` instead.
+    - 
