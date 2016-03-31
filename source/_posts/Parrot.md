@@ -55,4 +55,5 @@
 - Installing other packages
   - deprecating packages
     - package libtiff4-dev is deprecated in `sudo apt-get install dejagnu flex bison axel libboost-dev libtiff4-dev`, used `libtiff5-dev` instead.
-    - 
+
+- Even though I succussfully installed gcc-4.5, there's still no way for me to build `llvm` correctly. The error message even exceeded the limit of number of lines in ubuntu terminal. I'm now fully aware that I might not be able to config the environment correctly. I'm just down with it. 
