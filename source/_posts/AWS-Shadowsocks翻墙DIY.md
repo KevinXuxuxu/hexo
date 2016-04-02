@@ -83,6 +83,11 @@ $ sudo ssserver -p 443 -k password -m aes-256-cfb
     - 在下面点击入站，编辑
     - 在弹出框中点击添加规则，自定义tcp规则，端口范围为 443，保存。
 
+- 事实上 `ssserver` 自己也支持后台启动。只要在自后添加上 `-d start` 的参数，就可以在后台启动相同的服务器程序。运行的 log 被储存在 `/var/log/shadowsocks.log` 中，可用如下命令随时查看。
+    ```
+    tail -f /var/log/shadowsocks.log
+    ```
+
 
 #### Mac 上的 Shadowsocks 客户端（命令行工具）
 
