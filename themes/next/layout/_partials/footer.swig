@@ -3,7 +3,7 @@
   &copy; {% if theme.since and theme.since != current %} {{ theme.since }} - {% endif %}
   <span itemprop="copyrightYear">{{ current }}</span>
   <span class="with-love">
-    @
+    <a href="http://54.92.101.224:8080/">@</a>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
 </div>
