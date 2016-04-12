@@ -1,7 +1,7 @@
 title: Parrot
 date: 2016-04-01 23:24:09
 category: "tech"
-tags:
+tags: "index"
 ---
 
 - gcc-4.5 is needed.

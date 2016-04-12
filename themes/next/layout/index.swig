@@ -11,8 +11,8 @@
 {% block content %}
   <section id="posts" class="posts-expand">
     {% for post in page.posts %}
-      {% for cat in post.categories%}
-        {% if cat.name == "game" or cat.name == "tech" or cat.name == "log"%} {{ post_template.render(post, true) }} {% endif %}
+      {% for tag in post.tags%}
+        {% if tag.name == "index"%} {{ post_template.render(post, true) }} {% endif %}
       {% endfor %}
     {% endfor %}
   </section>
