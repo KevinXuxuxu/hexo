@@ -1,6 +1,6 @@
 title: ipchecker
 date: 2016-04-15 14:34:25
-catagory: "tech"
+category: "tech"
 tags: "index"
 ---
 
@@ -16,4 +16,4 @@ tags: "index"
 	- 增加新的组件，可以自动向 server 请求信息并更新自己的 hosts 文件。
 - 具体的项目进度和代码详见 [ipchecker](http://github.com/kevinxuxuxu/ipchecker)
 
-- 最近在听[平野绫](http://music.163.com/#/artist?id=16400)的歌，感觉团长声音真实赞。由于网易云音乐的插件出现了迷のbug，就贴两个链接吧：[God knows](http://music.163.com/#/song?id=27876224)，[Star way to heaven](http://music.163.com/#/song?id=27876221)
+- 最近在听[平野绫](http://music.163.com/#/artist?id=16400)的歌，感觉团长声音真是赞。由于网易云音乐的插件出现了迷のbug，就贴两个链接吧：[God knows](http://music.163.com/#/song?id=27876224)，[Star way to heaven](http://music.163.com/#/song?id=27876221)
